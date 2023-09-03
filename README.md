@@ -21,8 +21,24 @@ nmap -sI {idleIP} - Idle/Zombie Scan
 sudo nmap -sV - Show services and versions  
 sudo nmap --version-intensity {Level} - from 0 to 9  
 sudo nmap -sV --version-light - Equal to 2  
-sudo nmap-sV --version-all - Equal to 9  
-sudo nmap -O- - Show Operating system  
+sudo nmap -sV --version-all - Equal to 9  
+sudo nmap -O - Show Operating system  
+sudo nmap -sC - Run default script  
+sudo nmap --script={selectedScript} - Run a script from the folder /nmap/scripts  
+  
+# Nmap save results  
+sudo nmap {yourFlag} -oG {fileName} - Save in casual format  
+sudo nmap {yourFlag} -oX {fileName} - Save in XML format  
+sudo nmap {yourFlag} -oG {fileName} - Save in Grep format  
+sudo nmap {yourFlag} -oA {fileName} - Save in all 3 formats  
+
+
+
+
+
+
+
+
 
 
 
